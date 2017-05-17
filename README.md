@@ -1,0 +1,1 @@
+# shirashka.github.io

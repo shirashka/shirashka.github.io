@@ -50,6 +50,7 @@ img {
 }
 body {
     margin: 0;
+	max-width:100%;
 }
 section {
     width: 100%;
@@ -138,6 +139,11 @@ a:active {
 .gray a {
     color: #aaaaaa;
 }
+
+/* The following reusable styles
+are designed to get changed when screen 
+gets smaller. See media queries below. */
+
 .indentHalf {
     margin-left: 55%;
 }
@@ -149,6 +155,9 @@ a:active {
 }
 .sixtyPercent {
     width: 60%;
+}
+.hiddenBr {
+	display:none;
 }
 
 
@@ -232,7 +241,7 @@ a.homeBtn {
 }
 
 
-/******** WORK ********/
+/******** WORK (PROJECTS) ********/
 #work a {
     color: white;
 }
@@ -433,6 +442,9 @@ h2.aboutH2 {} .tiltImgDown {
     -webkit-transform: translate(10px, -40px); /* Chrome, Safari, Opera */
     transform: translate(0px, -45px);
 }
+#about .navyTitle {
+	margin-bottom: 5px;
+}
 
 
 /******** CONTACT ********/
@@ -470,7 +482,7 @@ h2.call {
 /******** FOOTER ********/
 
 footer {
-    padding: 1% 5%;
+    padding: 2% 5% 1% 5%;
     text-align: center;
     background-color: #213b5a;
     font-weight: bold;
@@ -534,6 +546,9 @@ footer a {
 		width: 40%;
 		margin-top: 10px;
 	}
+	a.homeBtn {
+		padding: 2%;
+	}
 }
 @media only screen and (max-width: 975px) {
     .skillContainer {
@@ -565,12 +580,17 @@ footer a {
 		width: 50%;
 		margin: 0 auto;
 	}
+	a.homeBtn {
+		padding: 3%;
+	}
 }
 @media only screen and (max-width: 600px) {
     .workCol {
         width: 75%;
         margin: 35px 1% 2% 1px;
     }
+	section {padding: 2% 5% 3% 5%;}
+	
 }
 @media only screen and (max-width: 480px) {
     .workCol {
@@ -582,5 +602,14 @@ footer a {
 	#contact .twentyPercent {
 		width: 100%;
 		margin: 0 auto;
+	}
+	.hiddenBr {
+		display: block;
+	}
+	a#toTopBtn {
+		width: 70px;
+		margin: 0;
+		bottom: 5px;
+		right: 0px;
 	}
 }

@@ -29,13 +29,6 @@ $("a#goContact").click(function() {
 	 scrollTop: $("section#contact").offset().top   }, 1000);
 });
 
-/*Draggable Skill Section
-$( "#draggable").draggable({containment:"parent", scroll:false, grid: [ 80, 80 ] });
-$( "#draggable1").draggable({containment:"parent", scroll:false, grid: [ 80, 80 ] });
-$( "#draggable2").draggable({containment:"parent", scroll:false, grid: [ 80, 80 ] });
-$( "#draggable3").draggable({containment:"parent", scroll:false, grid: [ 80, 80 ] });
-*/
-
 /******* OVERLAY HOVER BY WORK/PROJECTS SECTION *******/
 function overlayIn() {
 	$(".overlayDiv", this).addClass("overlay"); 

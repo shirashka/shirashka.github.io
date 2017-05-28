@@ -31,12 +31,14 @@ $("a#goContact").click(function() {
 
 /******* OVERLAY HOVER BY WORK/PROJECTS SECTION *******/
 function overlayIn() {
-	$(".overlayDiv", this).addClass("overlay"); 
+	$(".overlayDiv", this).addClass("overlay");
+	$("p.workOutline", this).css("visibility", "hidden");
 	$(".overlayText", this).removeClass("disappear");
 }
 
 function overlayOut() {
 	$(".overlayDiv", this).removeClass("overlay");
+    $("p.workOutline", this).css("visibility", "visible");
 	$(".overlayText", this).addClass("disappear");
 }
 

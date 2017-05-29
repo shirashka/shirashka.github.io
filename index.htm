@@ -2,198 +2,222 @@
 <html lang="en-US">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<meta name="description" content="Shira Shkarofsky's Portfolio Website.">
-	
-	<link href="style.css" rel="stylesheet"><!-- CSS stylesheet -->
-	<!-- <link rel="stylesheet" href="Font-Awesome/font-awesome-4.5.0/css/font-awesome.min.css">Font Awesome -->
-	<!-- jQuery and jQuery UI CDN-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="script.js"></script><!-- Javascript File -->
-	
-	
-	<link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Favicon -->
-	<title>Shira Shkarofsky | Web &amp; Application Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shira Shkarofsky's Portfolio Website.">
+
+    <link href="style.css" rel="stylesheet"><!-- CSS stylesheet -->
+    <!-- <link rel="stylesheet" href="Font-Awesome/font-awesome-4.5.0/css/font-awesome.min.css">Font Awesome -->
+    <!-- jQuery and jQuery UI CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script><!-- Javascript File -->
+
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Favicon -->
+    <title>Shira Shkarofsky | Web &amp; Application Developer</title>
 </head>
 
 <body>
 <nav>
-	<ul class="navList">
-		<li><a href="#home" id="goHome">Home</a></li>
-		<li><a href="#work" id="goWork">Projects</a></li>
-		<li><a href="#skills" id="goSkills">Skills</a></li>
-		<li><a href="#about" id="goAbout">About</a></li>
-		<li><a href="#contact" id="goContact">Contact</a></li>
-	</ul>
+    <!-- &#9776 is the three-lines-stacked symbol for mobile navigation -->
+    <span class="mobileOnlyText">Shira Shkarofsky</span>
+    <a href="#" id="showMobileNav">
+        <span class="mobileOnly" id="openNav">&#9776;</span>
+        <span class="mobileOnly" id="closeNav">X</span>
+    </a>
+    <ul class="navList hideNav">
+        <li><a href="#home" id="goHome">Home</a></li>
+        <li><a href="#work" id="goWork">Projects</a></li>
+        <li><a href="#skills" id="goSkills">Skills</a></li>
+        <li><a href="#about" id="goAbout">About</a></li>
+        <li><a href="#contact" id="goContact">Contact</a></li>
+    </ul>
 </nav>
 <a href="#" id="toTopBtn"><img src="img/arrow-up-white.png" alt="Back to Top" title="Back to Top"/></a>
 <section id="home" class="clear">
-	
-	<div class="full">
-		
-		<h1>Hi, I'm Shira.</h1>
-		<p>I'm a software developer with a passion for building websites and web applications.</p>
-		<br/>
-		<a href="#work" id="goWork" class="homeBtn">Find Out More <img src="img/angle-arrow-down.png" alt="Arrow down" class="arrow-down"/></a>
-		<br/><br class="hiddenBr" />
-	</div>
+
+    <div class="full">
+
+        <h1>Hi, I'm Shira.</h1>
+        <p>I'm a software developer with a passion for building websites and web applications.</p>
+        <br/>
+        <a href="#work" id="goWork" class="homeBtn">Find Out More <img src="img/angle-arrow-down.png" alt="Arrow down"
+                                                                       class="arrow-down"/></a>
+        <br/><br class="hiddenBr"/>
+    </div>
 </section>
 <!-- Projects section -->
-<section id="work">  
-	<div class="full">
-		<h1 class="navyTitle">Projects:</h1>
-		<h2 class="midP blue">
-		I love learning new things and improving on what I already know, building awesome software, apps, or websites, and using my skills to help others.</h2>
-		<p class="midP blue">My current accomplishments include creating a website for a non-profit religious school, acting as the Lead Web Developer for a team of 8 IT/development students, and building a .NET web application for a client.</p>
-		<div class="workCol">
-			<img src="img/fbooks.png" alt="Family Books Application" class="workPic" />
-			<p class="workOutline">
-				Web Application Developer <br/> Skills: C#.NET, MVC, Javascript/Jquery
-			</p>
-				<div class="overlayDiv">
-					<h3 class="overlayText disappear">Web Application Developer </h3>
-					<p class="overlayText disappear"> Client: Sarah Lipman </p>
-					<p class="overlayText disappear">ITEC 4286 - Web Application Development</p>
-					<p class="overlayText disappear">
-						<a href="http://shirashka.azurewebsites.net" type="button" target="_blank">View Application (Currently In-Progress)</a>
-					</p>	
-				</div>
-		</div>
-		<div class="workCol">
-			<img src="img/mhsmusic.png" alt="Milpitas High School Music Website" class="workPic" />
-			<p class="workOutline">
-				Lead Web Developer for Student Team Project <br/>
-				<span class="smallText">Skills: Leadership, Wordpress, CSS</span>
-			</p>
-			<div class="overlayDiv">
-				<h3 class="overlayText disappear">Lead Web Developer </h3>
-				<p class="overlayText disappear">Client: Milpitas High School Music </p>
-					<p class="overlayText disappear">ITEC 4750 - Senior Capstone</p>
-					<p class="overlayText disappear">
-						<a href="http://37.60.252.28/~mhsmusic/" target="_blank">View Website</a>
-					</p>	
-			</div>
-		</div>
-		<div class="workCol">
-			<img src="img/tabg.png" alt="Torah Academy of Buffalo Grove Website" class="workPic" />
-			<p class="workOutline">
-				Web Developer <br/> Skills: Wordpress, Design, HTML, CSS, PHP
-			</p>
-			<div class="overlayDiv">
-				<h3 class="overlayText disappear">Web Developer (Wordpress) <br/> </h3>
-				<p class="overlayText disappear">Client: Torah Academy of Buffalo Grove</p>
-					<p class="overlayText disappear">Fall 2016</p>
-					<p class="overlayText disappear"><a href="http://torahacademybg.a2hosted.com" title="View TABG Website in new tab" 
-						target="_blank">View Website</a>
-					</p>	
-			</div>
-		</div>
-		<div class="workCol">
-			<img src="img/mgadirectory.png" alt="MGA Directory, Project for ITEC 3280 - Web Programming" class="workPic" />
-			<p class="workOutline">
-				Student Project<br/> Skills: HTML, CSS, Javascript, Jquery
-			</p>
-			<div class="overlayDiv">
-				<h3 class="overlayText disappear">Javascript Project for ITEC 3280 - Web Programming</h3>
-					<p class="overlayText disappear">-Built a copy of the college's online directory, allowing users 
-					to add a faculty/staff member.</p>
-					<p class="overlayText disappear">
-						<a href="https://github.com/shirashka/directory-project" target="_blank">View Source Code</a>
-						<a href="https://github.com/shirashka/directory-project" target="_blank"><img src="img/coding.png" alt="View Code" title="View Source Code for Project"  class="codingIcon" /></a>
-					</p>	
-			</div>
-		</div>
-		<div class="workCol">
-			<img src="img/loanproject.png" alt="Project for ITEC 3280 - Web Programming" class="workPic" />
-			<p class="workOutline">
-				Student Project <br/> Skills: PHP, Javascript/Jquery, HTML, CSS
-			</p>
-			<div class="overlayDiv">
-				<h3 class="overlayText disappear">PHP/Javascript Project for ITEC 3280 - Web Programming</h3>
-				<!-- <p class="overlayText disappear"></p> -->
-					<p class="overlayText disappear">
-						<a href="https://github.com/shirashka/order-product-project" target="_blank">View Project Code</a>
-						<a href="https://github.com/shirashka/order-product-project"><img src="img/coding.png" alt="View Code" title="View Source Code for Project"  class="codingIcon" /></a>
-					</p>	
-			</div>
-		</div>
-		<div class="workCol">
-			<img src="img/kmp.png" alt="Keith McDonald Plumbing Website" class="workPic" />
-			<p class="workOutline">
-				Web Developer (Student) <br/> Skills: HTML, CSS, W3.CSS, Jquery, PHP
-			</p>
-			<div class="overlayDiv">
-				<h3 class="overlayText disappear">ITEC 2380 - Web Development, Fall 2016</h3>
-				<p class="overlayText disappear">Created a mock website makeover for a real plumbing company.</p>
-				<p class="overlayText disappear">
-					<a href="#" target="_blank" title="Coming Soon">View Website</a>
-					<a href="#"><img src="img/coding.png" alt="View Code" title="Source Code link- COMING SOON" class="codingIcon" /></a>
-				</p>	
-			</div>
-		</div>
-	</div>
+<section id="work">
+    <div class="full">
+        <h1 class="navyTitle">Projects:</h1>
+        <h2 class="midP blue">
+            I love learning new things and improving on what I already know, building awesome software, apps, or
+            websites, and using my skills to help others.</h2>
+        <p class="midP blue">My current accomplishments include creating a website for a non-profit religious school,
+            acting as the Lead Web Developer for a team of 8 IT/development students, and building a .NET web
+            application for a client.</p>
+        <div class="workCol">
+            <img src="img/fbooks.png" alt="Family Books Application" class="workPic"/>
+            <p class="workOutline">
+                Web Application Developer <br/> Skills: C#.NET, MVC, Javascript/Jquery
+            </p>
+            <div class="overlayDiv">
+                <h3 class="overlayText disappear">Web Application Developer </h3>
+                <p class="overlayText disappear"> Client: Sarah Lipman </p>
+                <p class="overlayText disappear">ITEC 4286 - Web Application Development</p>
+                <p class="overlayText disappear">
+                    <a href="http://shirashka.azurewebsites.net" type="button" target="_blank">View Application
+                        (Currently In-Progress)</a>
+                </p>
+            </div>
+        </div>
+        <div class="workCol">
+            <img src="img/mhsmusic.png" alt="Milpitas High School Music Website" class="workPic"/>
+            <p class="workOutline">
+                Lead Web Developer for Student Team Project <br/>
+                <span class="smallText">Skills: Leadership, Wordpress, CSS</span>
+            </p>
+            <div class="overlayDiv">
+                <h3 class="overlayText disappear">Lead Web Developer </h3>
+                <p class="overlayText disappear">Client: Milpitas High School Music </p>
+                <p class="overlayText disappear">ITEC 4750 - Senior Capstone</p>
+                <p class="overlayText disappear">
+                    <a href="http://37.60.252.28/~mhsmusic/" target="_blank">View Website</a>
+                </p>
+            </div>
+        </div>
+        <div class="workCol">
+            <img src="img/tabg.png" alt="Torah Academy of Buffalo Grove Website" class="workPic"/>
+            <p class="workOutline">
+                Web Developer <br/> Skills: Wordpress, Design, HTML, CSS, PHP
+            </p>
+            <div class="overlayDiv">
+                <h3 class="overlayText disappear">Web Developer (Wordpress) <br/></h3>
+                <p class="overlayText disappear">Client: Torah Academy of Buffalo Grove</p>
+                <p class="overlayText disappear">Fall 2016</p>
+                <p class="overlayText disappear"><a href="http://torahacademybg.a2hosted.com"
+                                                    title="View TABG Website in new tab"
+                                                    target="_blank">View Website</a>
+                </p>
+            </div>
+        </div>
+        <div class="workCol">
+            <img src="img/mgadirectory.png" alt="MGA Directory, Project for ITEC 3280 - Web Programming"
+                 class="workPic"/>
+            <p class="workOutline">
+                Student Project<br/> Skills: HTML, CSS, Javascript, Jquery
+            </p>
+            <div class="overlayDiv">
+                <h3 class="overlayText disappear">Javascript Project for ITEC 3280 - Web Programming</h3>
+                <p class="overlayText disappear">-Built a copy of the college's online directory, allowing users
+                    to add a faculty/staff member.</p>
+                <p class="overlayText disappear">
+                    <a href="https://github.com/shirashka/directory-project" target="_blank">View Source Code</a>
+                    <a href="https://github.com/shirashka/directory-project" target="_blank"><img src="img/coding.png"
+                                                                                                  alt="View Code"
+                                                                                                  title="View Source Code for Project"
+                                                                                                  class="codingIcon"/></a>
+                </p>
+            </div>
+        </div>
+        <div class="workCol">
+            <img src="img/loanproject.png" alt="Project for ITEC 3280 - Web Programming" class="workPic"/>
+            <p class="workOutline">
+                Student Project <br/> Skills: PHP, Javascript/Jquery, HTML, CSS
+            </p>
+            <div class="overlayDiv">
+                <h3 class="overlayText disappear">PHP/Javascript Project for ITEC 3280 - Web Programming</h3>
+                <!-- <p class="overlayText disappear"></p> -->
+                <p class="overlayText disappear">
+                    <a href="https://github.com/shirashka/order-product-project" target="_blank">View Project Code</a>
+                    <a href="https://github.com/shirashka/order-product-project"><img src="img/coding.png"
+                                                                                      alt="View Code"
+                                                                                      title="View Source Code for Project"
+                                                                                      class="codingIcon"/></a>
+                </p>
+            </div>
+        </div>
+        <div class="workCol">
+            <img src="img/kmp.png" alt="Keith McDonald Plumbing Website" class="workPic"/>
+            <p class="workOutline">
+                Web Developer (Student) <br/> Skills: HTML, CSS, W3.CSS, Jquery, PHP
+            </p>
+            <div class="overlayDiv">
+                <h3 class="overlayText disappear">ITEC 2380 - Web Development, Fall 2016</h3>
+                <p class="overlayText disappear">Created a mock website makeover for a real plumbing company.</p>
+                <p class="overlayText disappear">
+                    <a href="#" target="_blank" title="Coming Soon">View Website</a>
+                    <a href="#"><img src="img/coding.png" alt="View Code" title="Source Code link- COMING SOON"
+                                     class="codingIcon"/></a>
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
-<section id="skills">  
-	<div class="full">
-		<h1 class="white">Skills &amp; Qualifications</h1>
-		<p class="midP lightGray">I will be graduating from Middle Georgia State University in July 2017, with a B.S. in IT with a concentration in Software Development. 
-		My specialty is front-end or any web-related development, including HTML/CSS, Javascript/Jquery, .NET, Java, and Wordpress.</p>
-		<div class="skillContainer">
-			<h2 class="brownTitle">My Favorite Skills:</h2>
-				<div class="skill ui-widget-content pullLeft"><p>HTML5</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>CSS3</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Javascript</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Jquery</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Bootstrap</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Wordpress</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>.NET</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>MVC</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>C#</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Java</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Object-Oriented</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>PHP</p></div>
-				<div class="skill ui-widget-content pullLeft"><p>Learning New Things</p></div>
-		</div><!-- End favorite skills -->
-		
-		<div class="skillContainer">
-			<h2 class="blueTitle">My Learning Queue:<br class="hiddenBr"/><span class="ip gray"> *IP = In Progress</span></h2>
-			<div class="skill green"><p>React.js <span class="smallText">(IP)</span></p></div>
-			<div class="skill green"><p>Java Spring Framework <span class="smallText">(IP)</span></p></div>
-			<div class="skill green"><p>Android Studio <span class="smallText">(IP)</span></p></div>
-			<div class="skill green"><p>LESS/SASS</p></div>
-			<div class="skill green"><p>Yeoman </p></div>
-			<div class="skill green clear"><p>Node.js </p></div>
-			<div class="skill green"><p>AngularJS </p></div>
-			<div class="skill green"><p>Building RESTful APIs </p></div>
-			<div class="skill green"><p>Unix/Linux <span class="smallText"><em>(Cool Stuff. Why not?)</em></span></p></div>
-			
-			
-		</div><!-- End Currently Learning skills -->
-		
-		<div class="skillContainer">
-			<h2 class="brownTitle">I Also Enjoy:</h2>
-			<div class="skill"><p>Databases</p></div>
-			<div class="skill"><p>Entity Framework</p></div>
-			<div class="skill"><p>SQL</p></div>
-			<div class="skill"><p>ADO.NET</p></div>
-			<div class="skill"><p>MySQL</p></div>
-			<div class="skill"><p>UI/UX</p></div>
-			<div class="skill"><p>Responsive Web Design</p></div>
-			<div class="skill"><p>Teaching</p></div>
-			<div class="skill"><p>Leadership</p></div>
-			<div class="skill"><p>Tackling a Good Challenge</p></div>
-		</div><!-- End Other Skills -->
-		
-		<div class="skillContainer">
-			<h2 class="blueTitle">I Sometimes Dabble with:</h2>
-			<div class="skill green"><p>Writing</p></div>
-			<div class="skill green"><p>Design</p></div>
-			<div class="skill green"><p>Python</p></div>
-		</div><!-- End Dabble Skills -->
-	</div>
+<section id="skills">
+    <div class="full">
+        <h1 class="white">Skills &amp; Qualifications</h1>
+        <p class="midP lightGray">I will be graduating from Middle Georgia State University in July 2017, with a B.S. in
+            IT with a concentration in Software Development.
+            My specialty is front-end or any web-related development, including HTML/CSS, Javascript/Jquery, .NET, Java,
+            and Wordpress.</p>
+        <div class="skillContainer">
+            <h2 class="brownTitle">My Favorite Skills:</h2>
+            <div class="skill ui-widget-content pullLeft"><p>HTML5</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>CSS3</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Javascript</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Jquery</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Bootstrap</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Wordpress</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>.NET</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>MVC</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>C#</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Java</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Object-Oriented</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>PHP</p></div>
+            <div class="skill ui-widget-content pullLeft"><p>Learning New Things</p></div>
+        </div><!-- End favorite skills -->
+
+        <div class="skillContainer">
+            <h2 class="blueTitle">My Learning Queue:<br class="hiddenBr"/><span
+                    class="ip gray"> *IP = In Progress</span></h2>
+            <div class="skill green"><p>React.js <span class="smallText">(IP)</span></p></div>
+            <div class="skill green"><p>Java Spring Framework <span class="smallText">(IP)</span></p></div>
+            <div class="skill green"><p>Android Studio <span class="smallText">(IP)</span></p></div>
+            <div class="skill green"><p>LESS/SASS</p></div>
+            <div class="skill green"><p>Yeoman </p></div>
+            <div class="skill green clear"><p>Node.js </p></div>
+            <div class="skill green"><p>AngularJS </p></div>
+            <div class="skill green"><p>Building RESTful APIs </p></div>
+            <div class="skill green"><p>Unix/Linux <span class="smallText"><em>(Cool Stuff. Why not?)</em></span></p>
+            </div>
+
+
+        </div><!-- End Currently Learning skills -->
+
+        <div class="skillContainer">
+            <h2 class="brownTitle">I Also Enjoy:</h2>
+            <div class="skill"><p>Databases</p></div>
+            <div class="skill"><p>Entity Framework</p></div>
+            <div class="skill"><p>SQL</p></div>
+            <div class="skill"><p>ADO.NET</p></div>
+            <div class="skill"><p>MySQL</p></div>
+            <div class="skill"><p>UI/UX</p></div>
+            <div class="skill"><p>Responsive Web Design</p></div>
+            <div class="skill"><p>Teaching</p></div>
+            <div class="skill"><p>Leadership</p></div>
+            <div class="skill"><p>Tackling a Good Challenge</p></div>
+        </div><!-- End Other Skills -->
+
+        <div class="skillContainer">
+            <h2 class="blueTitle">I Sometimes Dabble with:</h2>
+            <div class="skill green"><p>Writing</p></div>
+            <div class="skill green"><p>Design</p></div>
+            <div class="skill green"><p>Python</p></div>
+        </div><!-- End Dabble Skills -->
+    </div>
 </section>
 <!-- 
 <section id="work2">  
@@ -203,71 +227,80 @@
 </secti on>	-->
 <!-- About section -->
 <section id="about">
-	<div class="full">
-		<h1 class="navyTitle">About Me</h1>
-		<div class="aboutCol">
-			<h2>Background</h2>
-			<p>My interest in coding started in middle school. In a high school computer course, I learned the basics of HTML, and
-			from then on, I was hooked! <br/>
-			As a quick learner with strong analytic skills, I thrive on utilizing my skills to produce
-			quality solutions and make a meaningful impact.</p><br/>
-			<p>People describe me as "positive", "motivated", and "intelligent", and I'm a committed team player and friend.</p>
-			<br/>
-			<p>My core values include integrity, responsibility, and collaboration.</p>
-			<br/><br/>
-			<p><strong>Favorite Quote:</strong></p>
-			<h3>
-				<em>"Life is 10% what happens to you and 90% how you react to it." </em>
-				<br/>
-				<span class="smallText indentHalf">-Charles Swindoll</span>
-			</h3>
-			
-			
-			<!-- <p>When I'm not tinkering with code, you might find me spending time with my family &amp; friends, reading,  -->
-			<!-- doing puzzles or sudoku, drinking ice coffee, playing piano, biking, or boating. </p> -->
-		</div>
-		<div class="aboutCol2">
-			<div class="tilt3"><img src="img/mgalogo.jpg" alt="Middle Georgia State University" class="aboutPic" /></div>
-			<div class="tilt4"><img src="img/erd-snip.png" alt="ERD - Database Diagram" class="aboutPic" /></div>
-			<div class="tilt5"><img src="img/vs-code-snip.png" alt="Coding" class="aboutPic" /></div>
-			
-		</div>
-	</div>
+    <div class="full">
+        <h1 class="navyTitle">About Me</h1>
+        <div class="aboutCol">
+            <h2>Background</h2>
+            <p>My interest in coding started in middle school. In a high school computer course, I learned the basics of
+                HTML, and
+                from then on, I was hooked! <br/>
+                As a quick learner with strong analytic skills, I thrive on utilizing my skills to produce
+                quality solutions and make a meaningful impact.</p><br/>
+            <p>People describe me as "positive", "motivated", and "intelligent", and I'm a committed team player and
+                friend.</p>
+            <br/>
+            <p>My core values include integrity, responsibility, and collaboration.</p>
+            <br/><br/>
+            <p><strong>Favorite Quote:</strong></p>
+            <h3>
+                <em>"Life is 10% what happens to you and 90% how you react to it." </em>
+                <br/>
+                <span class="smallText indentHalf">-Charles Swindoll</span>
+            </h3>
+
+
+            <!-- <p>When I'm not tinkering with code, you might find me spending time with my family &amp; friends, reading,  -->
+            <!-- doing puzzles or sudoku, drinking ice coffee, playing piano, biking, or boating. </p> -->
+        </div>
+        <div class="aboutCol2">
+            <div class="tilt3"><img src="img/mgalogo.jpg" alt="Middle Georgia State University" class="aboutPic"/></div>
+            <div class="tilt4"><img src="img/erd-snip.png" alt="ERD - Database Diagram" class="aboutPic"/></div>
+            <div class="tilt5"><img src="img/vs-code-snip.png" alt="Coding" class="aboutPic"/></div>
+
+        </div>
+    </div>
 </section>
 
-<section id="contact">  
-	<div class="full">
-		<h1 class="clear navyTitle">Contact Info:</h1>
-		<h3 class="eightyPercent">I'm actively looking for an internship or entry-level developer position as a 
-			Front-End Developer, Web Application Developer, or Java Developer.</h3>
-		<div class="pullLeft twentyPercent">
-			<a href="files/Shira-Shkarofsky-Resume.docx" target="_blank">
-				<img src="img/download-icon.png" alt="Download Resume" class="resumeIcon" title="View My Resume" />
-				<br/>
-				<span class="medText">View/Download Resume</span>
-			</a>
-			<br/>
-		</div>
-		<div class="pullLeft sixtyPercent">
-			<h2>Ways to contact me:</h2>
-			<ul class="sectionList">
-				<li>Email me at <a href="mailto:shirashka@gmail.com">shirashka@gmail</a></li>
-				<li>Connect or contact me through <a href="https://www.linkedin.com/in/shira-shkarofsky" target="_blank">LinkedIn</a></li>
-			</ul>
-		</div>
-			<h2 class="clear call"><em>I look forward to hearing from you!</em></h2>
-	</div>
+<section id="contact">
+    <div class="full">
+        <h1 class="clear navyTitle">Contact Info:</h1>
+        <h3 class="eightyPercent">I'm actively looking for an internship or entry-level developer position as a
+            Front-End Developer, Web Application Developer, or Java Developer.</h3>
+        <div class="pullLeft twentyPercent">
+            <a href="files/Shira-Shkarofsky-Resume.docx" target="_blank">
+                <img src="img/download-icon.png" alt="Download Resume" class="resumeIcon" title="View My Resume"/>
+                <br/>
+                <span class="medText">View/Download Resume</span>
+            </a>
+            <br/>
+        </div>
+        <div class="pullLeft sixtyPercent">
+            <h2>Ways to contact me:</h2>
+            <ul class="sectionList">
+                <li>Email me at <a href="mailto:shirashka@gmail.com">shirashka@gmail</a></li>
+                <li>Connect or contact me through <a href="https://www.linkedin.com/in/shira-shkarofsky"
+                                                     target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <h2 class="clear call"><em>I look forward to hearing from you!</em></h2>
+    </div>
 </section>
 
 <footer>
-  <a href="https://www.linkedin.com/in/shira-shkarofsky" target="_blank" title="View me on LinkedIn"><img src="img/linkedin.png" alt="View me on LinkedIn"/></a>
-  <br/>
-  Made by Shira Shkarofsky, &copy; 2017. 
-  <br/><br/>
-<span class="smallText gray">
-	Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy" target="_blank">Dave Gandy</a> 
-	&amp; <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver" target="_blank">MadebyOliver</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-</span>
+    <a href="https://www.linkedin.com/in/shira-shkarofsky" target="_blank" title="View me on LinkedIn"><img
+            src="img/linkedin.png" alt="View me on LinkedIn"/></a>
+    <br/>
+    Made by Shira Shkarofsky, &copy; 2017.
+    <br/><br/>
+    <span class="smallText gray">
+	    Icons made by
+        <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy" target="_blank">Dave Gandy</a>
+	    &amp;
+        <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver" target="_blank">MadebyOliver</a>
+        from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a>,
+        licensed by
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </span>
 </footer>
 </body>
 </html>

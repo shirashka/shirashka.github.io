@@ -29,6 +29,19 @@ $("a#goContact").click(function() {
 	 scrollTop: $("section#contact").offset().top   }, 1000);
 });
 
+/******* HIDE/REVEAL NAVIGATION MENU ON MOBILE *******/
+$("#closeNav").hide();
+
+$("a#showMobileNav").click(function() {
+    $("#openNav").toggle();
+    $("#closeNav").toggle();
+    $(".navList").toggleClass("changeNav");
+});
+
+
+
+
+
 /******* OVERLAY HOVER BY WORK/PROJECTS SECTION *******/
 function overlayIn() {
 	$(".overlayDiv", this).addClass("overlay");

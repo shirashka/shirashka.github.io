@@ -179,6 +179,7 @@ nav {
 .navList li {
     float: left;
 }
+
 .navList a {
     text-decoration: none;
     display: block;
@@ -199,6 +200,25 @@ nav {
     opacity: .9;
 }
 
+/* Styles for mobile nav. See more styles
+by media queries below.
+ Uses jQuery to help with transitions */
+.mobileOnly {
+    display: none;
+    float: right;
+    font-size:1.7em;
+    color: #213b5a;
+    margin: 3% 15px 3% 0;
+
+}
+.mobileOnlyText {
+    display:none;
+    text-align:center;
+    color: #213b5a;
+    width: 85%;
+    float:left;
+    margin: 3% 0 3% 0;
+}
 
 /******** HOME ********/
 #home {
@@ -517,7 +537,6 @@ footer a {
     background-color: #555; 
 }
 
-
 /******* MEDIA-QUERIES *********/
 
 @media only screen and (max-width: 1230px) {
@@ -591,8 +610,49 @@ footer a {
         width: 75%;
         margin: 35px 1% 2% 1px;
     }
-	section {padding: 2% 5% 3% 5%;}
-	
+	section {
+        padding: 2% 5% 3% 5%;
+    }
+    .navList a {
+        border: none;
+        margin: 0;
+    }
+    nav {
+        width:100%;
+        background-color: #eee;
+        border-bottom: 2px solid #213b5a;
+    }
+    .mobileOnly, .mobileOnlyText {
+        display:block;
+    }
+
+    .hideNav {
+        display:none;
+    }
+
+    .changeNav {
+        display:inline;
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    .changeNav li {
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .changeNav a {
+        width:100%;
+    }
+    .changeNav li:first-child {
+        border-top: 1px dashed #213b5a;
+    }
+    .changeNav a:hover {
+        background-color: #213b5a;
+        color:white;
+    }
+
+
 }
 @media only screen and (max-width: 480px) {
     .workCol {
@@ -614,4 +674,7 @@ footer a {
 		bottom: 5px;
 		right: 0px;
 	}
+    h1 {
+        font-size:2em;
+    }
 }

@@ -390,6 +390,7 @@ background:
 .skill p {
     margin: 0;
     color: #213b5a;
+	padding-right: 4px;
 }
 .skillContainer .green,
 .green div {
